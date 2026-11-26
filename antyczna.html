@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wulkanizacja Antyczna — Wulkanizacja i serwis opon Bielsko-Biała</title>
+<meta name="description" content="Wulkanizacja Antyczna — Wulkanizacja i serwis opon w Bielsko-Biała. Ocena 4,7/5 w Google (143 opinii). Zadzwoń: 600 892 187.">
+<style>
+  :root{
+    --ink:#0d0f12; --ink-2:#15181d; --line:#262b33; --muted:#9aa4b2;
+    --paper:#ffffff; --accent:#ff6a13; --accent-2:#ffa22b;
+    --r:18px; --max:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    background:var(--paper);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+  a{color:inherit;text-decoration:none}
+
+  /* top bar */
+  .topbar{background:var(--ink);color:#fff;font-size:13.5px}
+  .topbar .wrap{display:flex;justify-content:space-between;gap:16px;align-items:center;height:44px;flex-wrap:wrap}
+  .topbar strong{color:#fff}
+  .topbar .hours{color:var(--muted)}
+  .topbar .call{color:var(--accent-2);font-weight:700;white-space:nowrap}
+
+  /* nav */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid #eceef1}
+  header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:18px}
+  .brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.3px;font-size:17px}
+  .mark{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;color:#fff;font-size:16px;font-weight:900}
+  nav.links{display:flex;gap:26px;font-size:14.5px;color:#4b5563;font-weight:500}
+  nav.links a:hover{color:var(--ink)}
+  .btn{display:inline-flex;align-items:center;gap:9px;background:var(--accent);color:#fff;font-weight:700;
+       padding:12px 20px;border-radius:999px;font-size:14.5px;box-shadow:0 6px 18px rgba(255,106,19,.28);transition:.18s}
+  .btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(255,106,19,.34)}
+  .btn.ghost{background:#fff;color:var(--ink);border:1.5px solid #dfe3e8;box-shadow:none}
+  @media(max-width:820px){nav.links{display:none}}
+
+  /* hero */
+  .hero{position:relative;overflow:hidden;background:var(--ink);color:#fff;padding:78px 0 84px}
+  .hero:before{content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(900px 380px at 82% 8%,rgba(255,106,19,.30),transparent 62%),
+      radial-gradient(620px 320px at 6% 96%,rgba(255,162,43,.16),transparent 65%),
+      repeating-linear-gradient(115deg,transparent 0 46px,rgba(255,255,255,.028) 46px 47px);
+  }
+  .hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:center}
+  @media(max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:34px}.hero{padding:54px 0 62px}}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--accent-2);border:1px solid rgba(255,162,43,.35);
+    background:rgba(255,162,43,.08);padding:7px 13px;border-radius:999px;margin-bottom:20px}
+  h1{font-size:clamp(30px,4.6vw,50px);line-height:1.08;letter-spacing:-1.4px;font-weight:850;margin-bottom:18px}
+  h1 em{font-style:normal;color:var(--accent-2)}
+  .lede{color:#c8cfd8;font-size:17.5px;max-width:44ch;margin-bottom:28px}
+  .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+  .hero-cta .btn.ghost{background:rgba(255,255,255,.07);color:#fff;border-color:rgba(255,255,255,.22)}
+  .rating{display:flex;align-items:center;gap:12px;font-size:14px;color:#c8cfd8}
+  .stars{color:var(--accent-2);letter-spacing:2px;font-size:15px}
+
+  /* hero card */
+  .card-now{background:linear-gradient(180deg,#1b1f26,#12151a);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+  .card-now h3{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:700;margin-bottom:16px}
+  .row{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px dashed #2b313a;font-size:14.5px}
+  .row:last-child{border:0;padding-bottom:0}
+  .row span:first-child{color:var(--muted)}
+  .row span:last-child{font-weight:650;text-align:right}
+  .pill{display:inline-block;background:rgba(46,204,113,.14);color:#5fe08f;border:1px solid rgba(46,204,113,.3);
+    padding:2px 9px;border-radius:999px;font-size:12px;font-weight:700}
+
+  /* sections */
+  section.pad{padding:76px 0}
+  .sec-head{max-width:56ch;margin-bottom:40px}
+  .sec-head .kicker{font-size:12.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+  .sec-head h2{font-size:clamp(24px,3vw,34px);letter-spacing:-.9px;line-height:1.15;font-weight:820;margin-bottom:12px}
+  .sec-head p{color:#5b6572;font-size:16px}
+
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  @media(max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:620px){.grid{grid-template-columns:1fr}}
+  .svc{border:1px solid #e8eaee;border-radius:var(--r);padding:24px;transition:.18s;background:#fff}
+  .svc:hover{border-color:#cfd5dd;transform:translateY(-2px);box-shadow:0 12px 28px rgba(13,15,18,.07)}
+  .svc .ic{width:42px;height:42px;border-radius:12px;background:#fff4ec;color:var(--accent);
+    display:grid;place-items:center;font-size:19px;margin-bottom:15px}
+  .svc h3{font-size:16.5px;letter-spacing:-.2px;margin-bottom:7px}
+  .svc p{color:#5b6572;font-size:14.5px}
+
+  /* why */
+  .why{background:#f7f8fa;border-top:1px solid #eceef1;border-bottom:1px solid #eceef1}
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+  @media(max-width:900px){.why-grid{grid-template-columns:1fr 1fr}}
+  .why-item .num{font-size:13px;font-weight:800;color:var(--accent);margin-bottom:8px}
+  .why-item h3{font-size:15.5px;margin-bottom:6px}
+  .why-item p{font-size:14px;color:#5b6572}
+
+  /* reviews */
+  .revs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  @media(max-width:820px){.revs{grid-template-columns:1fr}}
+  .rev{border:1px solid #e8eaee;border-radius:var(--r);padding:22px;background:#fff}
+  .rev .stars{margin-bottom:10px}
+  .rev p{font-size:14.5px;color:#3d454f;margin-bottom:14px}
+  .rev .who{font-size:13px;color:#8b95a1;font-weight:600}
+
+  /* contact */
+  .contact{background:var(--ink);color:#fff}
+  .contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+  @media(max-width:880px){.contact .wrap{grid-template-columns:1fr;gap:32px}}
+  .contact h2{font-size:clamp(24px,3vw,34px);letter-spacing:-.9px;margin-bottom:14px;line-height:1.15}
+  .contact p.sub{color:#a9b3c0;margin-bottom:26px;font-size:16px}
+  .cline{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid #22272f;align-items:flex-start}
+  .cline .ic{color:var(--accent-2);font-size:17px;width:22px;flex:0 0 22px;margin-top:2px}
+  .cline .lbl{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:#7d8794;font-weight:700;margin-bottom:3px}
+  .cline .val{font-size:16px;font-weight:650}
+  .cline a.val:hover{color:var(--accent-2)}
+  .map{background:linear-gradient(135deg,#1a1e24,#101317);border:1px solid var(--line);border-radius:var(--r);
+    min-height:280px;display:grid;place-items:center;text-align:center;padding:30px}
+  .map .pin{font-size:32px;margin-bottom:10px}
+  .map strong{display:block;margin-bottom:6px}
+  .map span{color:var(--muted);font-size:14px}
+
+  footer{background:#080a0c;color:#7d8794;font-size:13px;padding:26px 0}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+  /* sticky mobile call */
+  .sticky{display:none}
+  @media(max-width:760px){
+    .sticky{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:99;background:#fff;
+      border-top:1px solid #e8eaee;padding:10px 12px;gap:10px;box-shadow:0 -6px 20px rgba(0,0,0,.08)}
+    .sticky a{flex:1;justify-content:center;padding:13px 10px}
+    body{padding-bottom:70px}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div><strong>Ocena 4,7/5</strong> &nbsp;·&nbsp; 143 opinii w Google</div>
+    <div class="hours">Otwarte: 8:00–17:00</div>
+    <a class="call" href="tel:+48600892187">📞 600 892 187</a>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <div class="brand"><div class="mark">◆</div> Wulkanizacja Antyczna</div>
+    <nav class="links">
+      <a href="#uslugi">Usługi</a>
+      <a href="#dlaczego">Dlaczego my</a>
+      <a href="#opinie">Opinie</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="btn" href="tel:+48600892187">Zadzwoń teraz</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Wulkanizacja i serwis opon · Bielsko-Biała</div>
+      <h1>Wymiana opon<br><em>bez stania w kolejce.</em></h1>
+      <p class="lede">Sezon w pełni. Zadzwoń rano, a powiemy Ci od razu, czy mamy wolny termin na dziś. Wymiana, wyważanie, naprawa i przechowanie kół.</p>
+      <div class="hero-cta">
+        <a class="btn" href="tel:+48600892187">📞 600 892 187</a>
+        <a class="btn ghost" href="#kontakt">Jak dojechać →</a>
+      </div>
+      <div class="rating">
+        <span class="stars">★★★★★</span>
+        <span><strong>4,7/5</strong> — 143 opinii klientów w Google</span>
+      </div>
+    </div>
+    <div class="card-now">
+      <h3>Dziś w warsztacie</h3>
+      <div class="row"><span>Godziny</span><span>8:00–17:00</span></div>
+      <div class="row"><span>Wolne terminy</span><span class="pill">tak, na dziś</span></div>
+      <div class="row"><span>Wycena</span><span>bezpłatna</span></div>
+      <div class="row"><span>Dojazd</span><span>ul. Antyczna 63</span></div>
+      <div class="row"><span>Telefon</span><span>600 892 187</span></div>
+    </div>
+  </div>
+</div>
+
+<section class="pad" id="uslugi">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Zakres usług</div>
+      <h2>Robimy to, po co przyjeżdża 90% klientów</h2>
+      <p>Konkretnie, sprawnie i z jasną wyceną przed rozpoczęciem pracy.</p>
+    </div>
+    <div class="grid">
+      <div class="svc"><div class="ic">◉</div><h3>Wymiana opon</h3><p>Osobówki, dostawcze, SUV. Termin na telefon, bez zapisów z tygodniowym wyprzedzeniem.</p></div>
+      <div class="svc"><div class="ic">⚙</div><h3>Wyważanie kół</h3><p>Nowoczesna wyważarka — zero drgań na kierownicy przy wyższych prędkościach.</p></div>
+      <div class="svc"><div class="ic">❄</div><h3>Naprawa opon</h3><p>Przebicie, wentyl, uszkodzenie felgi. W większości przypadków naprawa na miejscu.</p></div>
+      <div class="svc"><div class="ic">⌁</div><h3>Przechowanie opon</h3><p>Zostawiasz komplet u nas po sezonie i odbierasz gotowy na następny. Bez wożenia w bagażniku.</p></div>
+      <div class="svc"><div class="ic">◇</div><h3>Serwis klimatyzacji</h3><p>Nabijanie i odgrzybianie. Sprawdź, zanim przyjdzie upał.</p></div>
+      <div class="svc"><div class="ic">✆</div><h3>Zadzwoń i zapytaj</h3><p>Nie wiesz, co się dzieje z autem? Opisz objawy przez telefon — powiemy, czy przyjeżdżać.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad why" id="dlaczego">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Dlaczego my</div>
+      <h2>143 opinii i 4,7 gwiazdek nie bierze się z przypadku</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item"><div class="num">01</div><h3>Wycena przed pracą</h3><p>Mówimy, ile zapłacisz, zanim podniesiemy auto. Bez niespodzianek na fakturze.</p></div>
+      <div class="why-item"><div class="num">02</div><h3>Termin, który trzymamy</h3><p>Umawiamy konkretny dzień i godzinę. Nie „proszę dzwonić za tydzień”.</p></div>
+      <div class="why-item"><div class="num">03</div><h3>Doświadczenie</h3><p>Setki aut w tym mieście. Znamy typowe usterki naszych modeli.</p></div>
+      <div class="why-item"><div class="num">04</div><h3>Blisko</h3><p>ul. Antyczna 63 — wjazd i miejsce do zaparkowania na czas naprawy.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad" id="opinie">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Opinie</div>
+      <h2>Co mówią klienci</h2>
+      <p>Fragmenty opinii z profilu Google. Pełna lista dostępna po kliknięciu w ocenę.</p>
+    </div>
+    <div class="revs">
+      <div class="rev"><div class="stars">★★★★★</div><p>„Szybko, konkretnie i w dobrej cenie. Polecam każdemu.”</p><div class="who">— opinia Google</div></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>„Znalazłem termin tego samego dnia, naprawione na miejscu.”</p><div class="who">— opinia Google</div></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>„Uczciwie powiedzieli, że nie trzeba wymieniać — rzadkość.”</p><div class="who">— opinia Google</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad contact" id="kontakt">
+  <div class="wrap">
+    <div>
+      <h2>Zadzwoń — powiemy od razu,<br>czy mamy termin</h2>
+      <p class="sub">Najszybciej załatwisz sprawę telefonicznie. Jeśli nie odbieramy, jesteśmy pod autem — oddzwonimy.</p>
+      <div class="cline"><div class="ic">📞</div><div><div class="lbl">Telefon</div><a class="val" href="tel:+48600892187">600 892 187</a></div></div>
+      <div class="cline"><div class="ic">📍</div><div><div class="lbl">Adres</div><div class="val">ul. Antyczna 63, Bielsko-Biała</div></div></div>
+      <div class="cline"><div class="ic">🕘</div><div><div class="lbl">Godziny otwarcia</div><div class="val">8:00–17:00</div></div></div>
+    </div>
+    <div class="map">
+      <div>
+        <div class="pin">📍</div>
+        <strong>Wulkanizacja Antyczna</strong>
+        <span>ul. Antyczna 63<br>Bielsko-Biała</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Wulkanizacja Antyczna · Bielsko-Biała</div>
+    <div>Strona: <strong>strona dla lokalnych firm</strong></div>
+  </div>
+</footer>
+
+<div class="sticky">
+  <a class="btn" href="tel:+48600892187">📞 Zadzwoń</a>
+  <a class="btn ghost" href="#kontakt">Jak dojechać</a>
+</div>
+
+</body>
+</html>
