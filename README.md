@@ -1,8 +1,12 @@
-# Demo stron dla lokalnych firm — Bielsko-Biała
+# Demo stron dla lokalnych firm
 
-Koncepcje stron wizytówek dla realnych firm z Bielska-Białej. Każda napisana ręcznie w HTML i CSS, bez frameworków i bez gotowych szablonów. Układ mobile-first, jeden plik na stronę, bez zewnętrznych bibliotek.
+Koncepcje stron wizytówek w trzech segmentach i trzech systemach wizualnych. Każda napisana ręcznie w HTML i CSS, bez frameworków, bez gotowych szablonów, bez zewnętrznych bibliotek. Układ mobile-first, jeden plik na stronę.
 
 To projekty demonstracyjne, przygotowane jako propozycja. Nie są to realizacje na zlecenie.
+
+## Motoryzacja
+
+Strony dla realnych firm z Bielska-Białej, z ich ocenami z Google. Układ oparty na telefonie i statusie "dziś w warsztacie".
 
 | Firma | Branża | Ocena Google | Demo |
 |---|---|---|---|
@@ -12,12 +16,28 @@ To projekty demonstracyjne, przygotowane jako propozycja. Nie są to realizacje 
 | Auto-mechanika Geometria 3D | mechanika samochodowa | 4,9 (170 opinii) | [otwórz](klimczak.html) |
 | Wulkanizacja Antyczna | wulkanizacja, serwis opon | 4,7 (143 opinii) | [otwórz](antyczna.html) |
 
+## Zdrowie
+
+Jasna, spokojna typografia szeryfowa, dużo światła, nacisk na przebieg pierwszej wizyty. Bez wymyślonych opinii i ocen.
+
+| Projekt | Branża | Demo |
+|---|---|---|
+| Gabinet Ruch | fizjoterapia | [otwórz](fizjoterapia.html) |
+
+## Rzemiosło premium
+
+Ciemny, redakcyjny układ, duża typografia, numerowany proces. Inny system wizualny niż pozostałe.
+
+| Projekt | Branża | Demo |
+|---|---|---|
+| Stolarnia | meble na wymiar | [otwórz](stolarnia.html) |
+
 ## Co zawiera każda strona
 
-- sekcja otwarcia z telefonem i statusem "dziś w warsztacie"
-- lista usług z opisem tego, po co przyjeżdża większość klientów
-- sekcja zaufania: wycena przed pracą, trzymany termin, doświadczenie, bliskość
-- opinie klientów z realnymi ocenami Google
+- sekcja otwarcia z jasnym działaniem do wykonania
+- opis usług i tego, po co przychodzi klient
+- przebieg współpracy lub wizyty
+- cennik lub widełki
 - pełna responsywność, sprawdzana na telefonie
 
 ## Czego w wersjach demo nie ma
