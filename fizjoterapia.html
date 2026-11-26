@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gabinet Ruch — fizjoterapia (demo)</title>
+<style>
+:root{--tlo:#f8f6f1;--atr:#2f4f4a;--akc:#7d9c8e;--tx:#1b1f1d;--sz:#5f6b66;--rm:#e4dfd4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--tlo);color:var(--tx);font:16px/1.65 -apple-system,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.w{max-width:1040px;margin:0 auto;padding:0 22px}
+header{padding:22px 0;border-bottom:1px solid var(--rm)}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:14px}
+.logo{font-weight:700;font-size:19px;letter-spacing:-.02em}
+.logo i{color:var(--akc);font-style:normal}
+.tel{font-size:14px;color:var(--sz);text-decoration:none;white-space:nowrap}
+.hero{padding:54px 0 46px}
+.k{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--akc);font-weight:700;margin-bottom:18px}
+h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(31px,7.5vw,54px);line-height:1.08;letter-spacing:-.02em;margin-bottom:20px}
+h1 em{font-style:italic;color:var(--atr)}
+.hero p{max-width:50ch;color:var(--sz);font-size:17px;margin-bottom:30px}
+.btn{display:inline-block;background:var(--atr);color:#fff;padding:15px 28px;border-radius:100px;text-decoration:none;font-weight:600;font-size:15px}
+.btn.alt{background:none;color:var(--atr);border:1.5px solid var(--atr);margin-left:8px}
+.sek{padding:44px 0;border-top:1px solid var(--rm)}
+h2{font-family:Georgia,serif;font-weight:400;font-size:clamp(23px,4.6vw,32px);letter-spacing:-.01em;margin-bottom:26px}
+.grid{display:grid;gap:14px}
+@media(min-width:680px){.grid{grid-template-columns:1fr 1fr}.grid.tro{grid-template-columns:repeat(3,1fr)}}
+.card{background:#fff;border:1px solid var(--rm);border-radius:14px;padding:22px}
+.card h3{font-size:16px;margin-bottom:6px;letter-spacing:-.01em}
+.card p{color:var(--sz);font-size:14.5px}
+.step{display:flex;gap:14px;margin-bottom:20px}
+.num{flex:0 0 34px;height:34px;border-radius:50%;background:var(--atr);color:#fff;display:grid;place-items:center;font-size:13px;font-weight:700}
+.step b{display:block;margin-bottom:2px}
+.step p{color:var(--sz);font-size:14.5px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td{padding:13px 0;border-bottom:1px solid var(--rm)}
+td:last-child{text-align:right;font-weight:600;white-space:nowrap}
+.faq p{color:var(--sz);font-size:15px;margin-bottom:18px}
+.faq b{color:var(--tx);display:block;margin-bottom:3px}
+.kontakt{background:var(--atr);color:#fff;border-radius:18px;padding:32px 24px;margin:44px 0}
+.kontakt h2{color:#fff;margin-bottom:12px}
+.kontakt p{opacity:.82;margin-bottom:22px;font-size:15px}
+.kontakt a{display:inline-block;background:#fff;color:var(--atr);padding:14px 26px;border-radius:100px;text-decoration:none;font-weight:700;font-size:15px}
+footer{padding:26px 0 40px;color:var(--sz);font-size:13px;border-top:1px solid var(--rm)}
+</style></head><body>
+<header><div class="w nav"><div class="logo">Gabinet <i>Ruch</i></div><a class="tel" href="tel:+48000000000">tel. 000 000 000</a></div></header>
+<div class="w">
+<section class="hero">
+  <div class="k">Fizjoterapia · Bielsko-Biała</div>
+  <h1>Ból pleców nie musi być <em>codziennością</em></h1>
+  <p>Diagnostyka funkcjonalna i terapia manualna. Pracujemy nad przyczyną, nie tylko nad objawem. Pierwsza wizyta trwa 60 minut.</p>
+  <a class="btn" href="#kontakt">Zapisz wizytę</a><a class="btn alt" href="#cennik">Cennik</a>
+</section>
+<section class="sek"><h2>Z czym przychodzą pacjenci</h2>
+  <div class="grid">
+    <div class="card"><h3>Ból kręgosłupa</h3><p>Odcinek lędźwiowy i szyjny. Praca siedząca, długie godziny przy biurku.</p></div>
+    <div class="card"><h3>Po urazie</h3><p>Powrót do ruchu po skręceniu, przeciążeniu lub zabiegu operacyjnym.</p></div>
+    <div class="card"><h3>Ból głowy i napięcie</h3><p>Napięciowe bóle głowy, barki, kark. Terapia tkanek miękkich.</p></div>
+    <div class="card"><h3>Profilaktyka</h3><p>Osoby aktywne, które chcą uniknąć przeciążeń treningowych.</p></div>
+  </div>
+</section>
+<section class="sek"><h2>Jak wygląda pierwsza wizyta</h2>
+  <div class="step"><div class="num">1</div><div><b>Rozmowa i wywiad</b><p>15 minut o historii bólu, pracy i aktywności. Bez tego terapia jest zgadywaniem.</p></div></div>
+  <div class="step"><div class="num">2</div><div><b>Testy funkcjonalne</b><p>Sprawdzamy zakres ruchu i wzorce. Szukamy przyczyny, nie najgłośniejszego miejsca.</p></div></div>
+  <div class="step"><div class="num">3</div><div><b>Terapia i plan</b><p>Pierwsze techniki na wizycie oraz plan ćwiczeń do domu na najbliższe dni.</p></div></div>
+</section>
+<section class="sek" id="cennik"><h2>Cennik</h2>
+  <table>
+    <tr><td>Pierwsza wizyta, 60 min</td><td>180 zł</td></tr>
+    <tr><td>Wizyta kontrolna, 45 min</td><td>140 zł</td></tr>
+    <tr><td>Terapia manualna, 45 min</td><td>150 zł</td></tr>
+    <tr><td>Pakiet 5 wizyt</td><td>650 zł</td></tr>
+  </table>
+  <p style="color:var(--sz);font-size:13.5px;margin-top:16px">Ceny przykładowe, do ustalenia z gabinetem.</p>
+</section>
+<section class="sek faq"><h2>Częste pytania</h2>
+  <p><b>Czy potrzebne jest skierowanie?</b>Nie. Fizjoterapeuta przyjmuje bez skierowania.</p>
+  <p><b>Ile wizyt będzie potrzebnych?</b>Po pierwszej wizycie dostają Państwo plan z realną liczbą spotkań, nie szacunkiem na wyczucie.</p>
+  <p><b>Czy jest parking?</b>Tak, miejsca przed budynkiem.</p>
+</section>
+<div class="kontakt" id="kontakt"><h2>Zapisz się na wizytę</h2><p>Najszybciej telefonicznie. Odpowiadamy tego samego dnia.</p><a href="tel:+48000000000">Zadzwoń: 000 000 000</a></div>
+<footer>Strona demonstracyjna. Przykład układu i stylu dla gabinetu fizjoterapii.</footer>
+</div></body></html>
